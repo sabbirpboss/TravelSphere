@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../../images/logo.png";
-import banner from "../../images/banner.png";
 import "./Header.css";
 
 const Header = () => {
@@ -22,16 +21,6 @@ const Header = () => {
           </span>
         </div>
       </nav>
-      <div className="banner">
-        <img src={banner} alt="" />
-        <div className="banner-details">
-          <div>
-            <h1>Hello World</h1>
-            <h3>Amazing Travel With Me</h3>
-          </div>
-          <button className="banner-btn">Book Now</button>
-        </div>
-      </div>
     </header>
   );
 };
