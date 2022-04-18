@@ -1,8 +1,12 @@
 import React from "react";
 import "./HomePage.css";
 import banner from "../../images/banner.png";
+import useServices from "../../Hooks/useServices";
+import Service from "../Service/Service";
 
 const HomePage = () => {
+  const [services] = useServices([]);
+
   return (
     <main>
       <section className="banner">
@@ -13,6 +17,18 @@ const HomePage = () => {
             <h3>Amazing Travel With Me</h3>
           </div>
           <button className="banner-btn">Book Now</button>
+        </div>
+      </section>
+
+      <section className="services-section">
+        <h2>Awesome Package, what you are looking for!!!</h2>
+        <div className="services">
+            {
+                services.map(service => <Service
+                    key={service.id} 
+                    service={service}
+                ></Service>)
+            }
         </div>
       </section>
 

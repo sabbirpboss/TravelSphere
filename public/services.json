@@ -1,0 +1,23 @@
+[
+  {
+    "id": "01",
+    "name": "River Side",
+    "price": "4500",
+    "img": "https://travelsphere.netlify.app/images/01.png",
+    "title": "A travel agency is a private retailer or public service that provides travel and tourism-related services to the general public on behalf of accommodation or travel suppliers to offer different kinds of travelling packages for each destination."
+  },
+  {
+    "id": "02",
+    "name": "Ice Age",
+    "price": "3500",
+    "img": "https://travelsphere.netlify.app/images/02.png",
+    "title": "A travel agency is a private retailer or public service that provides travel and tourism-related services to the general public on behalf of accommodation or travel suppliers to offer different kinds of travelling packages for each destination."
+  },
+  {
+    "id": "03",
+    "name": "Sand Desert",
+    "price": "6000",
+    "img": "https://travelsphere.netlify.app/images/03.png",
+    "title": "A travel agency is a private retailer or public service that provides travel and tourism-related services to the general public on behalf of accommodation or travel suppliers to offer different kinds of travelling packages for each destination."
+  }
+]
