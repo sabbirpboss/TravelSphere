@@ -39,6 +39,10 @@
       font-size: 20px;
       cursor: pointer;
     transition: .3s;
+    margin-bottom: 10px;
+  }
+  .own-margin{
+    margin-bottom: 30px;
   }
   .form-submit:hover{
     background-color: rgba(255, 153, 0, 0.5);

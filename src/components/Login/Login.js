@@ -71,14 +71,14 @@ console.log(resetError);
           {loading && <p>Loading...</p>}
           <input type="submit" className="form-submit" value="Login" />
         </form>
-        <button onClick={() => signInWithGoogle()}>Sign In</button>
+        <button className="banner-btn" onClick={() => signInWithGoogle()}>Sign In</button>
         <p>
           New to Here?{" "}
           <Link className="form-link" to="/signUp">
             Create An Account Very Soon
           </Link>{" "}
         </p>
-        <button
+        <button className="banner-btn own-margin"
         onClick={async () => {
           await sendPasswordResetEmail(email);
           toast('Sent email');
