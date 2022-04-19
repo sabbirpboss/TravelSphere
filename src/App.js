@@ -9,6 +9,7 @@ import SignUp from './components/SignUp/SignUp';
 import About from './components/About/About';
 import Blogs from './components/Blogs/Blogs';
 import Footer from './components/Footer/Footer';
+import NotFound from './components/NotFound/NotFound';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
        <Route path='/about' element={<About></About>}></Route>
        <Route path='/login' element={<Login></Login>}></Route>
        <Route path='/signUp' element={<SignUp></SignUp>}></Route>
+       <Route path="*" element={<NotFound></NotFound>}></Route>
      </Routes>
      <Footer></Footer>
     </div>

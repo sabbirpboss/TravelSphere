@@ -1,0 +1,25 @@
+.about{
+    margin-top: 100px;
+}
+.about img{
+    width: 200px;
+    height: 200px;
+    border: 2px solid coral;
+    padding: 7px;
+    border-radius: 50%;
+}
+.about h2{
+    font-size: 30px;
+    color: coral;
+    font-family: cursive;
+    text-transform: uppercase;
+}
+.about p{
+    color: #262339;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: larger;
+    line-height: 30px;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
