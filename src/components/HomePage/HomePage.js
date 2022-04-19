@@ -3,6 +3,7 @@ import "./HomePage.css";
 import banner from "../../images/banner.png";
 import useServices from "../../Hooks/useServices";
 import Service from "../Service/Service";
+import { Link } from "react-router-dom";
 
 const HomePage = () => {
   const [services] = useServices([]);
@@ -16,7 +17,9 @@ const HomePage = () => {
             <h1>Hello World</h1>
             <h3>Amazing Travel With Me</h3>
           </div>
-          <button className="banner-btn">Book Now</button>
+          <button className="banner-btn">
+            <Link to="/checkOut">Book Now</Link>
+          </button>
         </div>
       </section>
 
