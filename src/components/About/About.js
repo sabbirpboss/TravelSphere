@@ -18,7 +18,7 @@ const About = () => {
         of instructions the computer will follow in the software (Great Sample
         Resume). This is also called “coding.” Programmers test their software,
         or other peoples, to see if it works properly (Career Cruising).   
-        Programmers study the tasks that the program will…show more content… The
+        Programmers study the tasks that the program wil show more content. The
         programmer will either have to go to the business or the home in some
         sort of transportation, or by using his own computer. If the programmer
         is working on certain software for his clients, then he may have built
