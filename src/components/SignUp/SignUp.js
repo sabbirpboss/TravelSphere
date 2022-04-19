@@ -19,14 +19,16 @@ const SignUp = () => {
 
   const handlePasswordBlur = (event) => {
     setPassword(event.target.value);
+    return;
   };
 
   const handleConfirmPasswordBlur = (event) => {
-    setPassword(event.target.value);
+    setConfirmPassword(event.target.value);
+    return;
   };
 
   if (user) {
-    navigate("/shop");
+    navigate("/home");
   }
 
   const handleCreateUser = (event) => {
