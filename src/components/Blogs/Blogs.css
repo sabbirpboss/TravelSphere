@@ -1,0 +1,16 @@
+.blogs{
+    width: 60%;
+    text-align: justify;
+    margin: 0 auto;
+    font-family: cursive;
+    margin-top: 150px;
+    margin-bottom: 100px;
+    font-size: 20px;
+    line-height: 35px;
+}
+.blogs h1{
+    text-align: center;
+    color: coral;
+    border-bottom: 2px solid coral;
+    padding-bottom: 10px;
+}
