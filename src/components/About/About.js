@@ -22,7 +22,7 @@ const About = () => {
         programmer will either have to go to the business or the home in some
         sort of transportation, or by using his own computer. If the programmer
         is working on certain software for his clients, then he may have built
-        it in a way to assist them from his computer.
+        it in a way to assist them from his computer. Done!
       </p>
     </div>
   );
