@@ -1,109 +1,121 @@
 /* banner */
-.banner{
-    width: 100%;
-    height: 855px;
-    position: relative;
+.banner {
+  width: 100%;
+  height: 855px;
+  position: relative;
 }
 .banner img {
   width: 100%;
   height: 100%;
 }
-.banner-details{
-    color: white;
-    position: absolute;
-    top: 30%;
-    left: 15%;
-    text-align: left;
-    background-color: rgba(87, 111, 111, 0.192);
-    padding: 20px;
-    border-radius: 10px;
+.banner-details {
+  color: white;
+  position: absolute;
+  top: 30%;
+  left: 15%;
+  text-align: left;
+  background-color: rgba(87, 111, 111, 0.192);
+  padding: 20px;
+  border-radius: 10px;
 }
-.banner-details h1, .banner-details h3{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 900;
-    font-size: 60px;
-    line-height: 5%;
-    text-transform: uppercase;
+.banner-details h1,
+.banner-details h3 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 5%;
+  text-transform: uppercase;
 }
-button.banner-btn{
-    background: linear-gradient(to left, #304F47 30%, #FB7F47 50%) right;
-    background-size: 200%;
-    transition: .5s ease-out;
-    border: none;
-    border-radius: 10px;
-    padding: 15px 30px;
-    color: white;
-    font-weight: bolder;
-    font-size: 20px;
-    cursor: pointer;
+button.banner-btn {
+  background: linear-gradient(to left, #304f47 30%, #fb7f47 50%) right;
+  background-size: 200%;
+  transition: 0.5s ease-out;
+  border: none;
+  border-radius: 10px;
+  padding: 15px 30px;
+  color: white;
+  font-weight: bolder;
+  font-size: 20px;
+  cursor: pointer;
 }
-button.banner-btn:hover{
-    background-position: left;
+button.banner-btn:hover {
+  background-position: left;
 }
-.banner-btn a{
-    text-decoration: none;
-    color: #FFFFFF;
+.banner-btn a {
+  text-decoration: none;
+  color: #ffffff;
 }
 
 /* services */
-.services-section{
-    margin-top: 50px;
-    margin-bottom: 50px;
+.services-section {
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
-.services-section h2{
-    font-size: 40px;
-    color: #304F47;
+.services-section h2 {
+  font-size: 40px;
+  color: #304f47;
 }
-.services{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin: 0 auto;
-    width: 65%;
-    grid-gap: 10px;
+.services {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0 auto;
+  width: 65%;
+  grid-gap: 10px;
 }
-.service{
-    width: 350px;
-    border: 2px solid rgba(251, 128, 71, 0.4);
-    padding: 10px;
-    border-radius: 10px;
+.service {
+  width: 350px;
+  border: 2px solid rgba(251, 128, 71, 0.4);
+  padding: 10px;
+  border-radius: 10px;
 }
-.service img{
-    width: 300px;
-    height: 250px;
-    border-radius: 10px;
+.service img {
+  width: 300px;
+  height: 250px;
+  border-radius: 10px;
 }
-.service-description{
-    width: 100%;
+.service-description {
+  width: 100%;
 }
-
-
 
 /* newsletter */
-.newsletter{
-    width: 55%;
-    margin: 0 auto;
-    border-radius: 20px;
-    background-color: #304F47;
-    text-align: center;
-    padding: 50px 50px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+.newsletter {
+  width: 55%;
+  margin: 0 auto;
+  border-radius: 20px;
+  background-color: #304f47;
+  text-align: center;
+  padding: 50px 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
-.newsletter h1{
-    font-size: 40px;
-    color: #FFFFFF;
-    margin: 0;
-    margin-bottom: 30px;
+.newsletter h1 {
+  font-size: 40px;
+  color: #ffffff;
+  margin: 0;
+  margin-bottom: 30px;
 }
-.newsletter input{
-    width: 30%;
-    height: 30px;
-    font-size: 22px;
-    padding: 10px;
-    border-color: #304F47;
-    border: none;
-    border-radius: 10px;
+.newsletter input {
+  width: 30%;
+  height: 30px;
+  font-size: 22px;
+  padding: 10px;
+  border-color: #304f47;
+  border: none;
+  border-radius: 10px;
 }
-.newsletter input:target{
-    border: none;
+.newsletter input:target {
+  border: none;
+}
+
+/* ================================
+                Mobile responsive 
+     ======================================*/
+
+@media only screen and (max-width:450px) {
+    .banner{
+        width: 400px;
+    }
+    .banner img{
+        width: 100%;
+    }
 }
