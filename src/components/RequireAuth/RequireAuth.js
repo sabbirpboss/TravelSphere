@@ -13,6 +13,9 @@ const RequireAuth = ({ children }) => {
     // than dropping them off on the home page.
     return <Navigate to="/login" state={{ from: location }} replace />;
   }
+ if(!user.emailVerified){
+    return <h1>Please verify your Email</h1>
+ }
   return children;
 };
 

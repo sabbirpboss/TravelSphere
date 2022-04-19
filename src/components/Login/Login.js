@@ -1,6 +1,12 @@
 import React, { useState } from "react";
-import { useSignInWithEmailAndPassword, useSignInWithGoogle } from "react-firebase-hooks/auth";
+import {
+  useSendPasswordResetEmail,
+  useSignInWithEmailAndPassword,
+  useSignInWithGoogle
+} from "react-firebase-hooks/auth";
 import { Link, useLocation, useNavigate } from "react-router-dom";
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import auth from "../../firebase.init";
 import "./Login.css";
 
@@ -10,6 +16,10 @@ const Login = () => {
   const [password, setPassword] = useState("");
   const [signInWithEmailAndPassword, user, loading, error] =
     useSignInWithEmailAndPassword(auth);
+  const [sendPasswordResetEmail, sending, resetError] =
+    useSendPasswordResetEmail(auth);
+
+console.log(resetError);
 
   const navigate = useNavigate();
   const location = useLocation();
@@ -31,8 +41,6 @@ const Login = () => {
     event.preventDefault();
     signInWithEmailAndPassword(email, password);
   };
-
-
 
   return (
     <div className="form-container">
@@ -59,10 +67,8 @@ const Login = () => {
               required
             />
           </div>
-          <p style={{ color: "red" }}>{error?.message}</p>
-          {
-            loading && <p>Loading...</p>
-          }
+          <p style={{ color: "red" }}>{error ? "User Not Found" : ""}</p>
+          {loading && <p>Loading...</p>}
           <input type="submit" className="form-submit" value="Login" />
         </form>
         <button onClick={() => signInWithGoogle()}>Sign In</button>
@@ -72,6 +78,15 @@ const Login = () => {
             Create An Account Very Soon
           </Link>{" "}
         </p>
+        <button
+        onClick={async () => {
+          await sendPasswordResetEmail(email);
+          toast('Sent email');
+        }}
+      >
+        Reset password
+      </button>
+      <ToastContainer />
       </div>
     </div>
   );
