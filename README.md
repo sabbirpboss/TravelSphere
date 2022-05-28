@@ -2,7 +2,7 @@
 
 Live Link [TravelSphere](https://travelsphere-18293.web.app/)
 
-##Steps
+## Steps
 
 - at first, npx create-react-app project-name
 - set react version 18
@@ -12,7 +12,7 @@ Live Link [TravelSphere](https://travelsphere-18293.web.app/)
 - create Login, signup component,setup Route
 - firebase deploy
 
-##technologies
+## technologies
 
 - using react
 - using react router DOM
